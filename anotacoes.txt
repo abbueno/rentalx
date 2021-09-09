@@ -6,3 +6,8 @@ yarn add ts-node-dev -D
 
 yarn add uuid
 yarn add @types/uuid -D
+
+yarn add multer
+yarn add @types/multer -D
+
+yarn add csv-parse
