@@ -8,8 +8,19 @@
             "type": "node",
             "request": "attach",
             "name": "Launch Program",
-            "skipFiles": ["<node_internals>/**"],
-            "outFiles": ["${workspaceFolder}/**/*.js",]
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
         }
     ]
 }
