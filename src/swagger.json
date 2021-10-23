@@ -74,6 +74,34 @@
             }
         }
     },
+    "/categories/import": {
+        "post": {
+            "tags": ["Category"],
+            "sumary": "Upload a new category",
+            "description": "Upload a new category",
+            "requestBody": {
+                "content": {
+                    "multipart/form-data": {
+                        "schema": {
+                            "type": "string",
+                            "properties": {
+                                "file": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "response": {
+                "201": {
+                    "description": "Created"
+                }
+
+            }
+        }
+    },
     "/specifications": {
         "post": {
             "tags": ["Specifications"],
